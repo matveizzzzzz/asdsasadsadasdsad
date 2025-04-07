@@ -21,8 +21,6 @@ def main():
     db_sess.commit()
     app.run()
 
-
-def main():
     db_session.global_init("db/blogs.db")
     user = User()
     user.surname = 'Nacist'
@@ -37,8 +35,6 @@ def main():
     db_sess.commit()
     app.run()
 
-
-def main():
     db_session.global_init("db/blogs.db")
     user = User()
     user.surname = 'Tatar'

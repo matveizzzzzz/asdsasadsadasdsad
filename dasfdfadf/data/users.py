@@ -17,3 +17,8 @@ class User(SqlAlchemyBase):
     email = sqlalchemy.Column(sqlalchemy.String,
                               index=True, unique=True, nullable=True)
     about = sqlalchemy.Column(sqlalchemy.String, nullable=True)
+
+
+    def __repr__(self):
+        return f'<Colonist> {self.id} {self.surname} {self.name}'
+

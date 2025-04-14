@@ -1,0 +1,25 @@
+<!-- templates/works_log.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Works log</h2>
+    {% for work in works %}
+        <h3>Action #{{ work.id }}</h3>
+        <table>
+            <tr>
+                <th>Title of activity</th>
+                <th>Team leader</th>
+                <th>Duration</th>
+                <th>Collaborators</th>
+                <th>Is finished</th>
+            </tr>
+            <tr>
+                <td>{{ work.title }}</td>
+                <td>{{ work.leader }}</td>
+                <td>{{ work.duration }}</td>
+                <td>{{ work.collaborators }}</td>
+                <td>{{ work.is_finished }}</td>
+            </tr>
+        </table>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,28 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Миссия Колонизация Марса</title>
+    <meta charset="utf-8">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Миссия Колонизация Марса</h1>
+    <h4>И на Марсе будут яблони цвести!</h4>
+    {% block content %}{% endblock %}
+</body>
+</html>
